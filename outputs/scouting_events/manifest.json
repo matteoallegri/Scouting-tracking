@@ -1,0 +1,28 @@
+{
+  "created_at_utc": "2026-11-04T14:09:13.420482+00:00",
+  "matches": [
+    "wc2022",
+    "wc2026"
+  ],
+  "player_matches": 65,
+  "validation_passed": true,
+  "inputs_sha256": {
+    "data/task1_finals/wc2022_argentina-france/info_stats_wc2022_argentina-france.json": "d9d49ddf19f29266bb566b3de71b8a42c2637b2eb3baf98fb6abf095e06bf39b",
+    "data/task1_finals/wc2022_argentina-france/events_wc2022_argentina-france.json": "0eaa93669eeeabf23ce95136fd0db3367e700aacd83672612616c15de70cbec6",
+    "data/task1_finals/wc2026_spain-argentina/info_stats_wc2026_spain-argentina.json": "ce95874ef50b869147777b7f597ea894681264b6971822b902072f421b167992",
+    "data/task1_finals/wc2026_spain-argentina/events_wc2026_spain-argentina.json": "c3319daa8723ad08d89ac48ed910d30fba56ed1a42b0f8ff78fd757d65a34a17",
+    "outputs/scouting_tracking/profiles.csv": "ce57381fe9a72f5ccdc1169ef66ad5b2dc518ad838cd033deb33b7da06c52ebf"
+  },
+  "code_sha256": {
+    "src/scouting_events/__init__.py": "6811ee83f57af140576fcd158f02f32f20c929480aad2e362f0cae3d3ed754d4",
+    "src/scouting_events/catalog.py": "f9e5e94a62e8f9ec02152b1660dae4c6473a0f6decffd14bdfc82c0e5fad60f5",
+    "src/scouting_events/data.py": "893c57ff1a881b3eeec72db8aee50efa398b89df22d920a8365f01cefbe88f46",
+    "commands/build_scouting_events.py": "b7dc032d434fcc7e6270fcf24cd864a07217c3d355489d793873463473baf297"
+  },
+  "outputs_sha256": {
+    "player_match_events.csv": "7daf370bfdae203855b90d452d15d2e45bc0026cb4f84b6a6e3be7566cfbd8d1",
+    "defensive_duels.csv": "2369c15fe9e34084a5e5240b5226fe2c1435f8f9abde934b8a9e13dfc0967e7b"
+  },
+  "phase_policy": "Categoria funzionale del gesto, non assegnazione temporale dal tracking. Referti intera partita, supplementari inclusi; rigori di spareggio esclusi. Conteggi per partita; nessuna ripartizione nei tempi o nelle transizioni.",
+  "zero_policy": "Conteggi omessi = 0 solo per giocatori entrati con referto presente e campo documentato nel match. Precisione senza passaggi = mancante."
+}

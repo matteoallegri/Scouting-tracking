@@ -1,0 +1,175 @@
+{
+  "match_id": "wc2022",
+  "created_at_utc": "2026-11-03T20:52:52.556549+00:00",
+  "config": {
+    "matches": [
+      "wc2022",
+      "wc2026"
+    ],
+    "high_speed_threshold_m_s": 6.944444444444445,
+    "acceleration_threshold_m_s2": 2.0,
+    "braking_threshold_m_s2": 2.0,
+    "episode_min_duration_s": 0.2,
+    "episode_min_speed_m_s": 0.5,
+    "transition_window_s": 5.0,
+    "possession_min_duration_s": 0.2,
+    "transition_min_opportunities": 3,
+    "min_observed_minutes": 0.0,
+    "min_transition_minutes": 0.0,
+    "min_spatial_samples": 10,
+    "spatial_step_frames": 25,
+    "replay_step_frames": 5,
+    "min_outfield_players": 8,
+    "family_weights": {
+      "motion": 0.4,
+      "space": 0.35,
+      "transitions": 0.25
+    },
+    "thresholds_note": "Parametri operativi del prototipo, modificabili; soglie e pesi non sono standard ufficiali né appresi sulle due finali. La corsa ad alta velocità nello scouting include gli intervalli con velocità almeno pari a 25 km/h (25/3.6 m/s), sprint inclusi."
+  },
+  "teams": {
+    "chg5qcvc96n4y8lqnpykf84ka": "Argentina",
+    "vzwd1wdack7b3817lesg78zp4": "France"
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "unique_profiles": true,
+      "duration_conservation": true,
+      "distance_conservation": true,
+      "episode_conservation": true,
+      "role_exposure_conservation": true,
+      "all_observed_roles_usable": true,
+      "catalog_matches_profiles": true,
+      "one_primary_role_per_player": true,
+      "official_minutes_available": true,
+      "quoted_values_valid": true,
+      "positive_durations": true,
+      "nonnegative_distances": true,
+      "high_speed_subset": true,
+      "p95_below_max": true,
+      "spatial_hull_domain": true,
+      "no_goalkeepers_in_spatial": true,
+      "finite_replay_positions": true,
+      "nonoverlapping_role_windows": true,
+      "phase_duration_subsets": true
+    },
+    "analysis_player_seconds": 83843.12000000013,
+    "analysis_distance_m": 188059.8973019078
+  },
+  "profile_rows": 625,
+  "outfield_players": 33,
+  "role_windows": 85,
+  "role_event_frame_recoveries": [
+    {
+      "event_id": 9954532942,
+      "paired_event_id": 1064532942,
+      "frame": 2000000,
+      "method": "reciprocal_substitution_same_clock"
+    }
+  ],
+  "unknown_role_player_seconds": 0.0,
+  "assigned_role_player_seconds": 4559.12,
+  "documented_role_player_seconds": 79284.0,
+  "transition_starts": 159,
+  "complete_player_transitions": 2159,
+  "episodes": 9788,
+  "spatial_sampling_step_frames": 25,
+  "replay_sampling_step_frames": 5,
+  "inputs": {
+    "outputs/tracking_metrics/wc2022/manifest.json": "0c025580f75a5e54a95d930a08b302db7bea4026d8c636869d05b2bd0ab895d9",
+    "outputs/tracking_metrics/wc2022/entities_frame.csv.gz": "120a0cd8c2bd189d31d61f185e3ff8ad331f1e8538252603cf1cb5e7a5c36fa6",
+    "outputs/tracking_metrics/wc2022/independent_audit.json": "20e45fef7b35339a671bff6707aa2868b618942cbbcdb8a5e460e3c6bc0c22d4",
+    "dataframes/wc2022/tracking_positions_clean.csv": "79c1c5c65a6ae8e07e5db4c6a47a644b1644ca6637b1630e80affcdb53e5c0aa",
+    "dataframes/wc2022/players_meta.csv": "b7eca0af93cdeb18cab21d1cc1b8ac8e279c5cdf84693d195a49d5f00af41059",
+    "data/task2_wc2026/player_market_values.csv": "b45e35b3655934a8ddb8aa6e07d7b0e5bfe685b3e3bd2602c2211cf4586c32ed",
+    "data/scouting_tracking/player_roles_reviewed.csv": "44a8c8d424974ff908f0cbea89ba0e5490ac1b8101911589a2400803991b2d18",
+    "data/scouting_tracking/market_values_verified.csv": "8b55f2eba3212f697f4391d2ae29d55299f99ed304c3e9cb6e149bb3d5c8ab89",
+    "outputs/tracking_metrics/diagnostics/wc2022_verified_event_links.csv": "e39fe76dc78e2868256726e1a1be2621d106187dd4edc0f7a0c9b3b1f39f1585",
+    "data/scouting_tracking/player_names_verified.csv": "e5663f0065889111f050b42e853177f9720b21d48f9af375cce7a12b311e0e5f",
+    "data/task1_finals/wc2022_argentina-france/events_wc2022_argentina-france.json": "0eaa93669eeeabf23ce95136fd0db3367e700aacd83672612616c15de70cbec6",
+    "data/task1_finals/wc2022_argentina-france/info_stats_wc2022_argentina-france.json": "d9d49ddf19f29266bb566b3de71b8a42c2637b2eb3baf98fb6abf095e06bf39b",
+    "data/task1_finals/wc2022_argentina-france/tracking_metadata_wc2022_argentina-france.xml": "14a18b9fec611aa616bf7a6110077b8935208b89cd5e0e0ac03d275f8af8e333",
+    "data/task1_finals/wc2026_spain-argentina/info_stats_wc2026_spain-argentina.json": "ce95874ef50b869147777b7f597ea894681264b6971822b902072f421b167992",
+    "data/task1_finals/wc2026_spain-argentina/events_wc2026_spain-argentina.json": "c3319daa8723ad08d89ac48ed910d30fba56ed1a42b0f8ff78fd757d65a34a17"
+  },
+  "directions": [
+    {
+      "team_id": "chg5qcvc96n4y8lqnpykf84ka",
+      "period_id": 1,
+      "attack_sign": 1
+    },
+    {
+      "team_id": "vzwd1wdack7b3817lesg78zp4",
+      "period_id": 1,
+      "attack_sign": -1
+    },
+    {
+      "team_id": "chg5qcvc96n4y8lqnpykf84ka",
+      "period_id": 2,
+      "attack_sign": -1
+    },
+    {
+      "team_id": "vzwd1wdack7b3817lesg78zp4",
+      "period_id": 2,
+      "attack_sign": 1
+    },
+    {
+      "team_id": "chg5qcvc96n4y8lqnpykf84ka",
+      "period_id": 3,
+      "attack_sign": 1
+    },
+    {
+      "team_id": "vzwd1wdack7b3817lesg78zp4",
+      "period_id": 3,
+      "attack_sign": -1
+    },
+    {
+      "team_id": "chg5qcvc96n4y8lqnpykf84ka",
+      "period_id": 4,
+      "attack_sign": -1
+    },
+    {
+      "team_id": "vzwd1wdack7b3817lesg78zp4",
+      "period_id": 4,
+      "attack_sign": 1
+    }
+  ],
+  "conventions": {
+    "context": "Coordinate valide della palla, senza interpolazioni/flag esclusi; possesso noto solo quando presente. Nessun fill attraverso pause o ignoti.",
+    "transitions": "Cambio fra possessi stabili nello stesso segmento osservato. Intervalli 0 < elapsed <= window: nessuna inclusione del tratto prima del recupero. Finestra interrotta al successivo cambio/ignoto/pausa; descrittore solo su finestre intere per giocatore e ruolo.",
+    "phases": "IP/OP comprendono le rispettive transizioni. Le viste di transizione sono sottoinsiemi, non addendi da sommare a IP/OP.",
+    "episodes": "Soglia tangenziale sostenuta per durata minima e velocità minima. Conteggio assegnato alla fase di inizio; nessun attraversamento di gap/ruolo/segmento. Accelerazioni e frenate sono episodi per partita rappresentata nel profilo (match_count=1 anche nelle viste per periodo), senza divisione per minuti o proiezione a gara intera.",
+    "space": "Campioni espliciti, portieri esclusi. Baricentro di riferimento esclude anche il giocatore. Delta hull a compagni fissi è geometrico, non causale.",
+    "roles": "Categoria primaria stabile dal catalogo curato per identità; secondari descrittivi, senza duplicazione. Ruoli/posizioni del match e loro disponibilità conservati separatamente come contesto. Nessun dato fisico modificato dalla classificazione.",
+    "selection": "Minuti giocati dal campo minsPlayed del referto, distinti dal tempo osservato nella fase. Il filtro somma per ID i minuti delle partite selezionate, contando ogni partita una sola volta indipendentemente da fase, periodo o disponibilità delle metriche; i profili tracking restano distinti per incontro. Budget massimo per singolo giocatore come vincolo sul valore noto: ignoti/ritirati esclusi dalla selezione economica, senza prezzo zero e senza alterare la somiglianza tracking. Fonte/data delle quote conservate.",
+    "names": "Mapping esistente e integrazioni curate da referto FIFA con evidenza locale verificata. Lookup limitato alla rosa del match, senza aggiungere candidati; altrimenti ID abbreviato.",
+    "scope": "Prototipo descrittivo su due finali, non previsione del successo futuro."
+  },
+  "runtime_s": 223.73,
+  "outputs_sha256": {
+    "spatial_samples.csv.gz": "2691f6700454203bce65faf1d2da55d9c33dce36b340288ab4393ff4be985c39",
+    "possession_transitions.csv": "4c26514ec31783493f2ffccc370ee6f91be0cc378c16e583034a594930d74e37",
+    "sequences.csv": "d60ba98862182727dcfe4f5df80c8df1da466527605b0104f6daeef0857e5349",
+    "frame_context.csv.gz": "a3b037362e0a490c598bf0030df3bde374ebafde970d27f5f506a9109f7501d4",
+    "player_transitions.csv": "eb9a0f6d34c4fa807f1089901952d747f0ab975fe391efe646b3cc921b1e9dcc",
+    "players.csv": "3d17d46406ca1b0ed5f8b54ed89cee9a9937d1a588eac02e4fe9bfaae318de4f",
+    "roles.csv": "bd455d5e1f0e57e5524d887f006a18d607bb816ce2617c2b7ca139016290fbd7",
+    "profiles.csv": "795f50d8aa27aba460d813bd807d6b0a1c47eeb84757a33b492b0f535796428c",
+    "episodes.csv": "9ae41fffa89c05f0cb5f01b5b9ae583bd8c9ed103265a1275391f49274c2405e",
+    "replay.csv.gz": "906d25252d980cf4e2c26bc9381118607cae8d662e6f09e97a950f709dacbfa5"
+  },
+  "metadata_refreshes": [
+    {
+      "updated_at_utc": "2026-11-04T14:09:11.861411+00:00",
+      "player_id": "hdjrmhxamxcuqmbd3h3jq7ag3",
+      "player_name": "Rodrigo De Paul",
+      "field": "scouting_secondary_roles",
+      "previous_value": "Esterno offensivo",
+      "value": "",
+      "previous_catalog_sha256": "c8a209455a69ffd08f179a2bbd9adfb738eb13fa9189e798332fb87952232544",
+      "reason": "Rimozione del ruolo secondario richiesta dall’utente; primario e altre associazioni invariati.",
+      "verification": "Confronto esatto dei CSV prima/dopo: tutte le celle diverse dalle associazioni secondarie del giocatore (e dalla data di revisione nel catalogo) sono identiche. Metriche e punteggi baseline invariati."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "created_at_utc": "2026-11-03T20:56:56.229198+00:00",
+  "config": {
+    "matches": [
+      "wc2022",
+      "wc2026"
+    ],
+    "high_speed_threshold_m_s": 6.944444444444445,
+    "acceleration_threshold_m_s2": 2.0,
+    "braking_threshold_m_s2": 2.0,
+    "episode_min_duration_s": 0.2,
+    "episode_min_speed_m_s": 0.5,
+    "transition_window_s": 5.0,
+    "possession_min_duration_s": 0.2,
+    "transition_min_opportunities": 3,
+    "min_observed_minutes": 0.0,
+    "min_transition_minutes": 0.0,
+    "min_spatial_samples": 10,
+    "spatial_step_frames": 25,
+    "replay_step_frames": 5,
+    "min_outfield_players": 8,
+    "family_weights": {
+      "motion": 0.4,
+      "space": 0.35,
+      "transitions": 0.25
+    },
+    "thresholds_note": "Parametri operativi del prototipo, modificabili; soglie e pesi non sono standard ufficiali né appresi sulle due finali. La corsa ad alta velocità nello scouting include gli intervalli con velocità almeno pari a 25 km/h (25/3.6 m/s), sprint inclusi."
+  },
+  "matches": [
+    "wc2022",
+    "wc2026"
+  ],
+  "validation_passed": true,
+  "code_sha256": {
+    "src/scouting_tracking/__init__.py": "32708d5f104c497c7fed814d513a51ab22ef2a55cc4fd9f5d7f40c4066c4a15e",
+    "src/scouting_tracking/config.py": "fc8302741f4e88ba0fb2a3135d91c8f6fbbb841ca437c7d956d0f193f30d2997",
+    "src/scouting_tracking/context.py": "b46d22d423ce9721301e32c18e662a062e1493e5a82ad524915f6470ce700b7a",
+    "src/scouting_tracking/features.py": "bff2b1405c777f20eeaf3a6860c18769a0c1dc6e15f1fd44ba132e3435a19d75",
+    "src/scouting_tracking/metadata.py": "5b51e85a9e8672e30936cc0bbd105b8004d5856f4b812ec3bebac3853a122f6e",
+    "src/scouting_tracking/pipeline.py": "2a3757af65ce4eb683198355d59136fd2786d669f64b3b5f00f8536b5b941500",
+    "src/scouting_tracking/plots.py": "b61448eabb00b7c83ef164cb5a9c15199371a2d2ab9e42ba0f1b808567c125e1",
+    "src/scouting_tracking/ranking.py": "89e14ca0dad43387bc38f3cba73b3bf2af41538284210f6028f98fe2e2d39cc9",
+    "src/scouting_tracking/role_catalog.py": "dee5a3757bbf1cbed90b7ed87dd558d4c2cb84f98f9232928804d8410571f2ee",
+    "src/scouting_tracking/selection.py": "a2029143a0333944b840a4e191368e1e093ed1fc15c9bcc17b7dc397a1ade251",
+    "commands/build_tracking_scouting.py": "ae5461d0a74ef44c2538ee8cc9ecc72477d35a145adc0ded004e444945c599fa"
+  },
+  "profiles": 1230,
+  "reference_cohorts": 30,
+  "role_catalog": {
+    "path": "data/scouting_tracking/player_roles_reviewed.csv",
+    "sha256": "44a8c8d424974ff908f0cbea89ba0e5490ac1b8101911589a2400803991b2d18"
+  },
+  "selection_inputs_sha256": {
+    "data/task2_wc2026/player_market_values.csv": "b45e35b3655934a8ddb8aa6e07d7b0e5bfe685b3e3bd2602c2211cf4586c32ed",
+    "data/scouting_tracking/market_values_verified.csv": "8b55f2eba3212f697f4391d2ae29d55299f99ed304c3e9cb6e149bb3d5c8ab89"
+  },
+  "outputs_sha256": {
+    "profiles.csv": "ce57381fe9a72f5ccdc1169ef66ad5b2dc518ad838cd033deb33b7da06c52ebf",
+    "reference_scalers.json": "ba7128be910cd6fe89c2897ca53dbb5f96cdca65d2f82c7398ab7b64bc327659",
+    "baseline_compatibility.csv": "a4c8c6b1d7de8411399a84bedcd97f7fd902586aef6adea90764596c8ccec4bc",
+    "feature_correlations.csv": "15a69044b947a5ec9c31265e9adea3db3305aa541c7b9d582af3685b42de3cf6"
+  },
+  "match_manifests_sha256": {
+    "wc2022": "8ea51bd23cd99723a37f86613ea509d20e98292c455e79a80f3620e860ff31bc",
+    "wc2026": "4395f3b07b4c739aa11563c2e258ed31847a778b6fe166af9dde837303ce1d09"
+  },
+  "note": "Scale congelate sul campione dichiarato; filtri di visualizzazione non rifittano la normalizzazione. Compatibilità 100/(1+d), non probabilità.",
+  "metadata_refreshes": [
+    {
+      "updated_at_utc": "2026-11-04T14:09:11.861411+00:00",
+      "player_id": "hdjrmhxamxcuqmbd3h3jq7ag3",
+      "player_name": "Rodrigo De Paul",
+      "field": "scouting_secondary_roles",
+      "previous_value": "Esterno offensivo",
+      "value": "",
+      "previous_catalog_sha256": "c8a209455a69ffd08f179a2bbd9adfb738eb13fa9189e798332fb87952232544",
+      "reason": "Rimozione del ruolo secondario richiesta dall’utente; primario e altre associazioni invariati.",
+      "verification": "Confronto esatto dei CSV prima/dopo: tutte le celle diverse dalle associazioni secondarie del giocatore (e dalla data di revisione nel catalogo) sono identiche. Metriche e punteggi baseline invariati."
+    }
+  ]
+}
